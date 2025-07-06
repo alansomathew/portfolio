@@ -23,60 +23,63 @@ export function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-md' 
+        ? 'bg-background/90 backdrop-blur-xl border-b border-border/50 shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-bold text-gradient hover:scale-105 transition-bounce"
+            className="text-2xl font-bold text-gradient hover:scale-105 transition-all duration-300 hover:text-primary"
           >
             Alanso Mathew
           </button>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-sm font-medium hover:text-primary transition-smooth"
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >
               About
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection('experience')}
-              className="text-sm font-medium hover:text-primary transition-smooth"
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >
               Experience
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-sm font-medium hover:text-primary transition-smooth"
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >
               Projects
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-sm font-medium hover:text-primary transition-smooth"
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >
               Contact
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
           </div>
 
           {/* Theme Controls */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <ColorCustomizer />
             <ThemeToggle />
-            <Button 
+            <button 
               onClick={() => scrollToSection('contact')}
-              size="sm"
-              className="hidden sm:inline-flex gradient-primary text-white hover:shadow-glow transition-bounce"
+              className="hidden sm:inline-flex button-primary"
             >
               Let's Talk
-            </Button>
+            </button>
           </div>
         </div>
       </div>
