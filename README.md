@@ -1,73 +1,215 @@
-# Welcome to your Lovable project
+# Alanso Mathew - Personal Portfolio
 
-## Project info
+A modern, responsive personal portfolio website showcasing my work as a Full-Stack Developer and Software Engineer. Built with React, TypeScript, and Tailwind CSS for optimal performance and user experience.
 
-**URL**: https://lovable.dev/projects/fab259be-22c6-4fc9-aa6a-a1e8283852dc
+## 🌟 Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Dark/Light Mode**: Toggle between themes with system preference detection
+- **Color Customization**: Choose from multiple color themes to personalize the experience
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Interactive Components**: Smooth scrolling navigation and hover effects
+- **Contact Form**: Functional contact form with form validation
+- **Project Showcase**: Detailed project gallery with screenshots and descriptions
+- **Performance Optimized**: Fast loading with optimized images and code splitting
 
-There are several ways of editing your application.
+## 🚀 Live Demo
 
-**Use Lovable**
+Visit the live portfolio: [Your Portfolio URL]
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fab259be-22c6-4fc9-aa6a-a1e8283852dc) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, Shadcn/ui components
+- **Icons**: Lucide React
+- **Routing**: React Router
+- **Animations**: CSS transitions and transforms
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-**Use your preferred IDE**
+## 📱 Sections
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Hero Section**: Introduction with professional photo and quick contact info
+2. **About**: Career objective, education, and technical skills
+3. **Experience**: Professional work history with detailed achievements
+4. **Projects**: Featured projects with screenshots, tech stacks, and impact metrics
+5. **Contact**: Interactive contact form and social media links
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🎨 Customization Features
 
-Follow these steps:
+- **Theme Toggle**: Switch between light and dark modes
+- **Color Themes**: Choose from 6 different color schemes:
+  - Blue (Default)
+  - Purple
+  - Green
+  - Orange
+  - Red
+  - Teal
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📋 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Shadcn/ui components
+│   ├── Hero.tsx         # Hero section
+│   ├── About.tsx        # About section
+│   ├── Experience.tsx   # Work experience
+│   ├── Projects.tsx     # Projects showcase
+│   ├── Contact.tsx      # Contact form
+│   ├── Navigation.tsx   # Navigation bar
+│   ├── Footer.tsx       # Footer component
+│   ├── ThemeProvider.tsx # Theme context
+│   ├── ThemeToggle.tsx  # Theme switcher
+│   └── ColorCustomizer.tsx # Color theme selector
+├── assets/              # Images and static files
+├── pages/               # Page components
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+└── styles/              # Global styles
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/alansomathew/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Building for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The build artifacts will be stored in the `dist/` directory.
 
-## What technologies are used for this project?
+## 🌐 Hosting on GitHub Pages
 
-This project is built with:
+This portfolio is configured for easy deployment to GitHub Pages.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Automatic Deployment
 
-## How can I deploy this project?
+1. Fork or clone this repository
+2. Go to your repository settings
+3. Navigate to Pages section
+4. Select source as "GitHub Actions"
+5. The site will automatically deploy on every push to main branch
 
-Simply open [Lovable](https://lovable.dev/projects/fab259be-22c6-4fc9-aa6a-a1e8283852dc) and click on Share -> Publish.
+### Manual Deployment
 
-## Can I connect a custom domain to my Lovable project?
+1. Build the project:
+```bash
+npm run build
+```
 
-Yes, you can!
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📝 Customization Guide
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Adding Your Information
+
+1. **Personal Details**: Update `src/components/Hero.tsx` with your information
+2. **About Section**: Modify `src/components/About.tsx` with your skills and background
+3. **Experience**: Update `src/components/Experience.tsx` with your work history
+4. **Projects**: Replace project data in `src/components/Projects.tsx`
+5. **Contact**: Update contact information in `src/components/Contact.tsx`
+
+### Adding Your Photos
+
+1. Replace `src/assets/alanso-profile.jpg` with your professional photo
+2. Add project screenshots to `src/assets/` directory
+3. Update image imports in respective components
+
+### Customizing Colors
+
+The portfolio uses a CSS custom properties system for theming:
+
+1. **Design System**: All colors are defined in `src/index.css`
+2. **Tailwind Config**: Extended in `tailwind.config.ts`
+3. **Color Themes**: Modify `src/components/ColorCustomizer.tsx` to add new themes
+
+### Adding New Sections
+
+1. Create a new component in `src/components/`
+2. Add the component to `src/pages/Index.tsx`
+3. Update navigation in `src/components/Navigation.tsx`
+
+## 📧 Contact Form Setup
+
+The contact form is currently set up with a demo implementation. To make it functional:
+
+1. **Formspree**: Add your Formspree endpoint
+2. **Netlify Forms**: Enable Netlify form handling
+3. **EmailJS**: Integrate EmailJS for client-side email sending
+4. **Custom Backend**: Connect to your own backend API
+
+## 🔧 Environment Variables
+
+Create a `.env` file in the root directory for any environment-specific configurations:
+
+```env
+VITE_CONTACT_FORM_ENDPOINT=your_form_endpoint_here
+VITE_ANALYTICS_ID=your_analytics_id_here
+```
+
+## 📈 Performance Optimization
+
+- **Images**: Optimized and compressed images
+- **Code Splitting**: Lazy loading for better performance
+- **CSS**: Purged unused styles in production
+- **Bundle Size**: Minimized JavaScript bundles
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Shadcn/ui](https://ui.shadcn.com/) for the amazing component library
+- [Lucide](https://lucide.dev/) for the beautiful icons
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [React](https://reactjs.org/) for the powerful frontend framework
+
+## 📞 Support
+
+If you have any questions or need help with customization, feel free to reach out:
+
+- **Email**: alansomathew10@gmail.com
+- **LinkedIn**: [linkedin.com/in/alansomathew](https://linkedin.com/in/alansomathew)
+- **GitHub**: [github.com/alansomathew](https://github.com/alansomathew)
+
+---
+
+Made with ❤️ by Alanso Mathew
