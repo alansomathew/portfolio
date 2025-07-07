@@ -27,8 +27,8 @@ export function Projects() {
     },
     {
       title: "EZBus – Real-Time Bus Tracking & Booking",
-      type: "Web App (Transport Management)",
-      client: "CHRIST University Transport Unit",
+      type: "Web App ",
+      client: "CHRIST University",
       year: "2024",
       tech: ["Django", "Bootstrap", "JavaScript", "Google Maps API"],
       description: "Campus bus tracking and booking system featuring live maps, trip scheduling, and student booking with notifications.",
@@ -46,9 +46,9 @@ export function Projects() {
     {
       title: "QNO – Smart Appointment Booking System",
       type: "Cross-Platform (Web + Mobile)",
-      client: "CHRIST University Health Centre",
+      client: "QNO Technologies",
       year: "2024",
-      tech: ["React.js", "Flutter (GetX)", "Django REST API", "PostgreSQL", "Razorpay"],
+      tech: ["React.js", "Flutter", "Django REST API", "PostgreSQL", "Razorpay"],
       description: "Health appointment platform enabling token-based queuing, secure payments, and live wait tracking.",
       features: [
         "Real-time queue and wait tracking",
@@ -81,8 +81,8 @@ export function Projects() {
     },
     {
       title: "Locally Away – E-Commerce for Food Materials",
-      type: "Internal E-Commerce App",
-      client: "CHRIST University",
+      type: " E-Commerce App",
+      client: "Natalie Dormer",
       year: "2023",
       tech: ["Django", "Tailwind CSS", "JavaScript"],
       description: "Platform to order ingredients for university event kitchens with product filtering and booking cart.",
@@ -136,7 +136,7 @@ export function Projects() {
     {
       title: "MentEezy – Mentorship Management System",
       type: "Academic Tracking System",
-      client: "Academic Mentoring Cell",
+      client: "CHRIST University",
       year: "2023",
       tech: ["Django", "Bootstrap", "JavaScript"],
       description: "Platform for tracking mentorship activities between faculty and students with session logging.",
@@ -153,7 +153,7 @@ export function Projects() {
     },
     {
       title: "Certify – Digital Certificate Generation",
-      type: "Admin Utility Web App",
+      type: "Web App",
       client: "CHRIST University",
       year: "2023",
       tech: ["Django", "JavaScript"],
@@ -172,7 +172,7 @@ export function Projects() {
     {
       title: "LetUsDream – Conference & Outreach Website",
       type: "Public Information Website",
-      client: "LetUsDream Conference",
+      client: "LetUsDream",
       year: "2022",
       tech: ["Django", "Bootstrap", "JavaScript"],
       description: "Content-rich platform for conference featuring articles, speaker bios, and multimedia content.",
@@ -189,8 +189,8 @@ export function Projects() {
     },
     {
       title: "Wallet View – Personal Finance Tracker",
-      type: "Mobile App (Learning Project)",
-      client: "Personal Project",
+      type: "Mobile App ",
+      client: "CHRIST University",
       year: "2022–Present",
       tech: ["Flutter", "Firebase", "Django"],
       description: "Personal budgeting app tracking expenses, insights, and shared costs. Migrated from Firebase to Django for backend improvements.",
@@ -200,7 +200,7 @@ export function Projects() {
         "Budget tracking and insights",
         "Cross-platform mobile support"
       ],
-      impact: "Served as a practical learning project for full-stack development.",
+      impact: "Over 500 active users managing personal finances and shared costs.",
       image: qnoScreenshot,
       github: "#",
       demo: "#"

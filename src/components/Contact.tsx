@@ -112,6 +112,7 @@ export function Contact() {
                     <p className="text-muted-foreground">linkedin.com/in/alansomathew</p>
                   </div>
                 </a>
+                {/*  */}
               </div>
             </div>
           </div>

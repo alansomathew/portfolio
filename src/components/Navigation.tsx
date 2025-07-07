@@ -35,7 +35,7 @@ export function Navigation() {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold text-gradient hover:scale-105 transition-all duration-300 hover:text-primary"
           >
-            Alanso Mathew
+             AM
           </button>
 
           {/* Navigation Links */}
@@ -48,6 +48,13 @@ export function Navigation() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
+              onClick={() => scrollToSection('skills')}
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
+            >
+              Skills
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
+             <button 
               onClick={() => scrollToSection('experience')}
               className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >

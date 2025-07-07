@@ -9,13 +9,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Hero Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left stagger-animation">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-subtle text-primary rounded-full text-sm font-medium mb-6">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-subtle text-primary rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
               Available for opportunities
-            </div>
+            </div> */}
             
             <h1 className="section-title mb-6 leading-tight">
-              Hi, I'm <span className="text-gradient">Alanso Mathew</span>
+              Hi, I'm <br /> <span className="text-gradient">Alanso Mathew</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
@@ -95,7 +95,7 @@ export function Hero() {
               </div>
               
               {/* Floating badges */}
-              <div className="absolute -top-4 -right-4 floating-element">
+              {/* <div className="absolute -top-4 -right-4 floating-element">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                   4+ Years
                 </div>
@@ -104,7 +104,7 @@ export function Hero() {
                 <div className="bg-success text-success-foreground px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                   Available
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

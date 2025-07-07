@@ -41,11 +41,11 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="professional-card relative">
               {/* Timeline indicator */}
-              <div className="absolute -left-4 top-8 w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg">
+              <div className="absolute left-2 top-8 w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-primary-foreground font-bold text-sm">{index + 1}</span>
               </div>
               
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8">
+              <div className=" mx-5 flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-primary mb-2">{exp.title}</h3>
                   <h4 className="text-xl font-semibold text-foreground mb-3">{exp.company}</h4>
@@ -60,7 +60,7 @@ export function Experience() {
               
               <div className="grid gap-4">
                 {exp.achievements.map((achievement, achIndex) => (
-                  <div key={achIndex} className="flex items-start gap-4 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
+                  <div key={achIndex} className="flex items-start gap-4 p-2 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
                     <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="w-2 h-2 bg-primary rounded-full" />
                     </div>
