@@ -50,12 +50,13 @@
     --input: 222 16% 90%;
     --ring: 222 84% 60%;
     
-    /* Modern professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222 84% 60%), hsl(222 84% 50%));
-    --gradient-surface: linear-gradient(135deg, hsl(210 20% 98%), hsl(0 0% 100%));
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 60% / 0.05), hsl(222 84% 70% / 0.02));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(210 20% 98% / 0.9));
+  /* Modern professional gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(222 84% 60%), hsl(222 84% 50%));
+  --gradient-surface: linear-gradient(135deg, hsl(210 20% 98%), hsl(0 0% 100%));
+  --gradient-hero: linear-gradient(135deg, hsl(222 84% 60% / 0.03), hsl(222 84% 70% / 0.01));
+  --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+  --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(210 20% 98% / 0.9));
+  --gradient-mesh: radial-gradient(circle at 25% 25%, hsl(222 84% 60% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(222 84% 70% / 0.08) 0%, transparent 50%);
     
     /* Elevated modern shadows */
     --shadow-sm: 0 1px 3px 0 hsl(222 84% 5% / 0.08);
@@ -133,12 +134,13 @@
     --input: 222 47% 15%;
     --ring: 222 84% 65%;
     
-    /* Modern dark gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222 84% 65%), hsl(222 84% 55%));
-    --gradient-surface: linear-gradient(135deg, hsl(222 47% 5%), hsl(222 47% 4%));
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 65% / 0.06), hsl(222 84% 75% / 0.03));
-    --gradient-card: linear-gradient(145deg, hsl(222 47% 4%), hsl(222 47% 5%));
-    --gradient-glass: linear-gradient(145deg, hsl(222 47% 4% / 0.95), hsl(222 47% 5% / 0.9));
+  /* Modern dark gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(222 84% 65%), hsl(222 84% 55%));
+  --gradient-surface: linear-gradient(135deg, hsl(222 47% 5%), hsl(222 47% 4%));
+  --gradient-hero: linear-gradient(135deg, hsl(222 84% 65% / 0.04), hsl(222 84% 75% / 0.02));
+  --gradient-card: linear-gradient(145deg, hsl(222 47% 4%), hsl(222 47% 5%));
+  --gradient-glass: linear-gradient(145deg, hsl(222 47% 4% / 0.8), hsl(222 47% 5% / 0.9));
+  --gradient-mesh: radial-gradient(circle at 25% 25%, hsl(222 84% 65% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(222 84% 75% / 0.08) 0%, transparent 50%);
     
     /* Elevated dark shadows */
     --shadow-sm: 0 1px 3px 0 hsl(222 47% 0% / 0.5);
@@ -234,7 +236,20 @@
   }
   
   .professional-card {
-    @apply gradient-card border border-border/50 rounded-3xl p-10 transition-all duration-500 hover:shadow-xl hover:border-primary/40 hover:-translate-y-2 hover:scale-[1.01];
+    @apply relative overflow-hidden border border-border/30 rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:border-primary/30 hover:-translate-y-1 hover:scale-[1.02] backdrop-blur-sm;
+    background: var(--gradient-card);
+  }
+  
+  .professional-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-mesh);
+    opacity: 0.3;
+    z-index: -1;
   }
   
   .glass-card {
@@ -246,7 +261,7 @@
   }
   
   .project-card {
-    @apply professional-card group overflow-hidden bg-gradient-to-br from-card to-surface;
+    @apply professional-card overflow-hidden bg-gradient-to-br from-card to-surface;
   }
   
   .hero-card {

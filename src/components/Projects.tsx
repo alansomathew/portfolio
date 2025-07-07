@@ -133,7 +133,7 @@ export function Projects() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="project-card hover-lift group">
+            <div key={index} className="project-card hover-lift group">{/* group class added back */}
               {/* Project Image */}
               <div className="relative overflow-hidden rounded-lg mb-6">
                 <img 
