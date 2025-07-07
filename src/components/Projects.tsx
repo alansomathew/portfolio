@@ -8,111 +8,200 @@ import locallyScreenshot from '@/assets/locally-away-screenshot.jpg';
 export function Projects() {
   const projects = [
     {
-      title: "QNO – Smart Appointment Booking System",
-      type: "Full-Stack",
-      client: "CHRIST University Health Centre",
-      year: "2024",
-      tech: ["React.js", "Flutter (GetX)", "Django REST API", "PostgreSQL", "Razorpay"],
-      description: "Smart appointment system for university clinics with real-time queue tracking, Razorpay payments, and multi-role login.",
+      title: "The Bridge – Placement Management System",
+      type: "Full-Stack Internal Web App",
+      client: "CHRIST University",
+      year: "2024–2025",
+      tech: ["Django", "SQLite", "Bootstrap", "jQuery", "DataTables"],
+      description: "Centralized placement management system for students, faculty, and recruiters with resume submissions and approval workflows.",
       features: [
-        "Live queue tracking & estimated wait time",
-        "Razorpay integration for secure online payments",
-        "Admin dashboard with doctor and appointment management",
-        "Real-time alerts and multi-role access"
+        "Resume approvals and department-wise views",
+        "HR dashboard with student visibility",
+        "CSV uploads and print-ready views",
+        "Placement tracking and analytics"
       ],
-      impact: "Reduced in-clinic waiting time by 70%, serving 200+ monthly users.",
+      impact: "Streamlined placement workflows and enhanced student visibility to recruiters.",
       image: qnoScreenshot,
       github: "#",
       demo: "#"
     },
     {
-      title: "Real-Time Bus Tracking Mobile App",
-      type: "Mobile + Maps Integration",
+      title: "EZBus – Real-Time Bus Tracking & Booking",
+      type: "Web App (Transport Management)",
       client: "CHRIST University Transport Unit",
       year: "2024",
-      tech: ["Flutter (GetX)", "Google Maps API", "Dio"],
-      description: "Real-time location tracking app for university buses with Google Maps integration and arrival estimates.",
+      tech: ["Django", "Bootstrap", "JavaScript", "Google Maps API"],
+      description: "Campus bus tracking and booking system featuring live maps, trip scheduling, and student booking with notifications.",
       features: [
-        "Live bus locations on Google Maps",
-        "Route/stop listing with arrival time predictions",
-        "Push notifications for delays",
-        "Admin panel (planned) for bus scheduling"
+        "Google Maps live tracking integration",
+        "Student booking system with notifications",
+        "Admin dashboard for trip management",
+        "Push alerts for delays and updates"
       ],
-      impact: "Will benefit 500+ daily commuters on launch.",
+      impact: "Improved reliability and transparency for 500+ daily commuters.",
       image: busScreenshot,
       github: "#",
-      demo: "#",
-      status: "In Development"
+      demo: "#"
+    },
+    {
+      title: "QNO – Smart Appointment Booking System",
+      type: "Cross-Platform (Web + Mobile)",
+      client: "CHRIST University Health Centre",
+      year: "2024",
+      tech: ["React.js", "Flutter (GetX)", "Django REST API", "PostgreSQL", "Razorpay"],
+      description: "Health appointment platform enabling token-based queuing, secure payments, and live wait tracking.",
+      features: [
+        "Real-time queue and wait tracking",
+        "Razorpay integration for secure payments",
+        "Role-based portals for different users",
+        "Appointment reminders and notifications"
+      ],
+      impact: "Reduced clinic wait times by 70%; used by 200+ patients monthly.",
+      image: qnoScreenshot,
+      github: "#",
+      demo: "#"
     },
     {
       title: "SWO Suite – Student Venue & Instrument Booking",
-      type: "Web App",
+      type: "Internal Booking System",
       client: "Student Welfare Office",
       year: "2024",
-      tech: ["Django", "Bootstrap", "JavaScript", "SQL"],
-      description: "Web platform for booking practice venues and musical instruments with role-based access and approval workflows.",
+      tech: ["Django", "Bootstrap", "JavaScript"],
+      description: "Booking platform for students to reserve music rooms and instruments with real-time availability and faculty approval.",
       features: [
-        "Real-time availability and booking calendar",
-        "Email alerts and approval system",
-        "Admin control over venue/instrument allocation",
-        "Booking conflict prevention logic"
+        "Calendar booking with real-time availability",
+        "Conflict prevention and approval flow",
+        "Email alerts and notifications",
+        "Admin control over venue allocation"
       ],
-      impact: "1000+ approved bookings, reducing manual workload by 90%.",
+      impact: "1000+ approved bookings; manual effort reduced by 90%.",
       image: locallyScreenshot,
       github: "#",
       demo: "#"
     },
     {
-      title: "Locally Away – E-commerce Platform",
-      type: "Web App",
-      client: "Personal Project",
+      title: "Locally Away – E-Commerce for Food Materials",
+      type: "Internal E-Commerce App",
+      client: "CHRIST University",
       year: "2023",
       tech: ["Django", "Tailwind CSS", "JavaScript"],
-      description: "E-commerce platform for booking ingredients and food preparation materials for local vendors and university services.",
+      description: "Platform to order ingredients for university event kitchens with product filtering and booking cart.",
       features: [
-        "Product listing, filtering, and booking cart",
-        "Secure user authentication",
-        "Admin inventory and booking approval system",
-        "Responsive UI design"
+        "Product filters and booking cart",
+        "Admin inventory management",
+        "Mobile-first responsive design",
+        "Secure user authentication"
       ],
-      impact: "Simplified material logistics during university events.",
+      impact: "Optimized procurement during large campus events.",
+      image: locallyScreenshot,
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Horizon – Static Microsite for Lavasa Retreat",
+      type: "Static Site",
+      client: "CHRIST University",
+      year: "2023",
+      tech: ["React.js", "Tailwind CSS"],
+      description: "Promotional microsite for university retreat with minimalistic and fast-loading design.",
+      features: [
+        "Tailwind responsive layout",
+        "Mobile-optimized UI design",
+        "Static hosting for fast performance",
+        "Registration and outreach features"
+      ],
+      impact: "Used for registrations and outreach across departments.",
+      image: busScreenshot,
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "The Buzz (Voice of Lavasa) – Music Streaming",
+      type: "Internal Streaming App",
+      client: "CHRIST University",
+      year: "2023",
+      tech: ["React.js", "Django"],
+      description: "Curated music streaming website for students and faculty with playlist management and secure streaming.",
+      features: [
+        "Playlist management system",
+        "Audio playback with streaming",
+        "Secure streaming protocols",
+        "Admin dashboard for content control"
+      ],
+      impact: "Used in university events and student-led sessions.",
       image: locallyScreenshot,
       github: "#",
       demo: "#"
     },
     {
       title: "MentEezy – Mentorship Management System",
-      type: "Web App",
+      type: "Academic Tracking System",
       client: "Academic Mentoring Cell",
       year: "2023",
-      tech: ["Django", "JavaScript", "Bootstrap"],
-      description: "Centralized platform for managing mentor-mentee relationships with progress tracking and academic planning.",
+      tech: ["Django", "Bootstrap", "JavaScript"],
+      description: "Platform for tracking mentorship activities between faculty and students with session logging.",
       features: [
-        "Mentor/Mentee dashboards with session logs",
-        "Admin control over assignments and reporting",
-        "Bulk downloads and print-friendly profiles",
-        "Google Sign-In integration (2024 update)"
+        "Session logging and dashboards",
+        "Google Sign-In integration",
+        "Profile downloads and reporting",
+        "Mentor-mentee matching system"
       ],
-      impact: "Improved transparency and structure across 30+ mentoring cells.",
+      impact: "Used by 30+ mentorship cells for structured engagement.",
+      image: qnoScreenshot,
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Certify – Digital Certificate Generation",
+      type: "Admin Utility Web App",
+      client: "CHRIST University",
+      year: "2023",
+      tech: ["Django", "JavaScript"],
+      description: "Platform for generating QR-secured digital certificates with dynamic templates and validation.",
+      features: [
+        "Dynamic certificate templates",
+        "QR validation and security",
+        "Secure certificate issuance",
+        "Bulk generation capabilities"
+      ],
+      impact: "Over 1000 certificates issued during campus fests and conferences.",
+      image: busScreenshot,
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "LetUsDream – Conference & Outreach Website",
+      type: "Public Information Website",
+      client: "LetUsDream Conference",
+      year: "2022",
+      tech: ["Django", "Bootstrap", "JavaScript"],
+      description: "Content-rich platform for conference featuring articles, speaker bios, and multimedia content.",
+      features: [
+        "SEO-friendly structure and content",
+        "Media embeds and speaker profiles",
+        "Event scheduling and registration",
+        "Multi-language content support"
+      ],
+      impact: "Reached international educators and event attendees.",
       image: locallyScreenshot,
       github: "#",
       demo: "#"
     },
     {
-      title: "Wallet View – Personal Finance App",
-      type: "Mobile App",
-      client: "Personal Learning Project",
-      year: "2022 – Present",
+      title: "Wallet View – Personal Finance Tracker",
+      type: "Mobile App (Learning Project)",
+      client: "Personal Project",
+      year: "2022–Present",
       tech: ["Flutter", "Firebase", "Django"],
-      description: "Personal finance tracker with daily expense monitoring, budget planning, and analytics dashboard.",
+      description: "Personal budgeting app tracking expenses, insights, and shared costs. Migrated from Firebase to Django for backend improvements.",
       features: [
-        "Daily & monthly budget tracking",
-        "Analytics dashboard with insights",
-        "Secure login and data storage",
-        "Shared expenses and split tracking"
+        "Expense charts and analytics",
+        "Shared expense splitting",
+        "Budget tracking and insights",
+        "Cross-platform mobile support"
       ],
-      impact: "Served as a playground for trying out Flutter, Firebase, and Django together.",
-      image: busScreenshot,
+      impact: "Served as a practical learning project for full-stack development.",
+      image: qnoScreenshot,
       github: "#",
       demo: "#"
     }
@@ -142,11 +231,6 @@ export function Projects() {
                   className="w-full h-48 object-cover transition-smooth group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-smooth" />
-                {project.status && (
-                  <Badge className="absolute top-3 right-3 bg-warning text-warning-foreground">
-                    {project.status}
-                  </Badge>
-                )}
               </div>
 
               {/* Project Info */}

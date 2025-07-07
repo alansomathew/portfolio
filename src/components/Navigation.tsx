@@ -62,6 +62,13 @@ export function Navigation() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
+              onClick={() => scrollToSection('certificates')}
+              className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
+            >
+              Certificates
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-semibold hover:text-primary transition-all duration-300 relative group"
             >
