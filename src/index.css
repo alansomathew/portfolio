@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Portfolio Design System - All colors MUST be HSL */
+/* Modern Professional Portfolio Design System - Industry Standard */
 
 @layer base {
   :root {
-    /* Base colors - Clean professional whites */
-    --background: 0 0% 100%;
-    --foreground: 220 13% 9%;
+    /* Base colors - Ultra clean modern whites */
+    --background: 0 0% 99%;
+    --foreground: 222 16% 5%;
     
-    /* Surface colors - Subtle depth */
+    /* Surface colors - Sophisticated depth */
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 9%;
-    --surface: 220 14% 99%;
-    --surface-foreground: 220 13% 9%;
+    --card-foreground: 222 16% 5%;
+    --surface: 210 20% 98%;
+    --surface-foreground: 222 16% 5%;
     
     /* Interactive colors */
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 9%;
+    --popover-foreground: 222 16% 5%;
     
-    /* Brand colors - Modern professional gradient */
-    --primary: 217 91% 60%;
+    /* Brand colors - Premium professional palette */
+    --primary: 222 84% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 217 91% 70%;
-    --primary-dark: 217 91% 45%;
-    --primary-subtle: 217 91% 95%;
+    --primary-light: 222 84% 70%;
+    --primary-dark: 222 84% 50%;
+    --primary-subtle: 222 84% 96%;
     
     /* Secondary palette - Sophisticated grays */
     --secondary: 220 14% 96%;
@@ -45,25 +45,25 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
     
-    /* Borders and inputs - Subtle definition */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    /* Borders and inputs - Modern subtle definition */
+    --border: 222 16% 90%;
+    --input: 222 16% 90%;
+    --ring: 222 84% 60%;
     
-    /* Professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 45%));
-    --gradient-surface: linear-gradient(135deg, hsl(220 14% 99%), hsl(0 0% 100%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.08), hsl(217 91% 70% / 0.03));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 99%));
-    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(220 14% 99% / 0.8));
+    /* Modern professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(222 84% 60%), hsl(222 84% 50%));
+    --gradient-surface: linear-gradient(135deg, hsl(210 20% 98%), hsl(0 0% 100%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 60% / 0.05), hsl(222 84% 70% / 0.02));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-glass: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(210 20% 98% / 0.9));
     
-    /* Professional shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(217 91% 60% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(217 91% 60% / 0.07), 0 2px 4px -1px hsl(217 91% 60% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(217 91% 60% / 0.08), 0 4px 6px -2px hsl(217 91% 60% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(217 91% 60% / 0.1), 0 10px 10px -5px hsl(217 91% 60% / 0.04);
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.12);
-    --shadow-inner: inset 0 2px 4px 0 hsl(217 91% 60% / 0.06);
+    /* Elevated modern shadows */
+    --shadow-sm: 0 1px 3px 0 hsl(222 84% 5% / 0.08);
+    --shadow-md: 0 4px 12px -2px hsl(222 84% 5% / 0.08);
+    --shadow-lg: 0 8px 24px -4px hsl(222 84% 5% / 0.12);
+    --shadow-xl: 0 16px 40px -8px hsl(222 84% 5% / 0.15);
+    --shadow-glow: 0 0 32px hsl(222 84% 60% / 0.2);
+    --shadow-inner: inset 0 2px 4px 0 hsl(222 84% 60% / 0.06);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,38 +89,38 @@
   }
 
   .dark {
-    /* Dark mode base colors - Deep professional */
-    --background: 222 47% 4%;
-    --foreground: 220 13% 95%;
+    /* Modern dark mode - Deep sophisticated */
+    --background: 222 47% 2%;
+    --foreground: 210 20% 98%;
     
-    /* Dark surface colors - Rich depth */
-    --card: 222 47% 6%;
-    --card-foreground: 220 13% 95%;
-    --surface: 222 47% 7%;
-    --surface-foreground: 220 13% 95%;
+    /* Dark surface colors - Premium depth */
+    --card: 222 47% 4%;
+    --card-foreground: 210 20% 98%;
+    --surface: 222 47% 5%;
+    --surface-foreground: 210 20% 98%;
     
     /* Dark interactive colors */
-    --popover: 222 47% 6%;
-    --popover-foreground: 220 13% 95%;
+    --popover: 222 47% 4%;
+    --popover-foreground: 210 20% 98%;
     
-    /* Brand colors for dark mode - Enhanced visibility */
-    --primary: 217 91% 68%;
-    --primary-foreground: 222 47% 4%;
-    --primary-light: 217 91% 78%;
-    --primary-dark: 217 91% 58%;
-    --primary-subtle: 217 91% 8%;
+    /* Enhanced brand colors for dark mode */
+    --primary: 222 84% 65%;
+    --primary-foreground: 222 47% 2%;
+    --primary-light: 222 84% 75%;
+    --primary-dark: 222 84% 55%;
+    --primary-subtle: 222 84% 8%;
     
-    /* Dark secondary palette - Better contrast */
-    --secondary: 222 47% 10%;
-    --secondary-foreground: 220 13% 95%;
+    /* Modern dark secondary palette */
+    --secondary: 222 47% 8%;
+    --secondary-foreground: 210 20% 98%;
     
-    /* Dark neutral tones - Improved readability */
-    --muted: 222 47% 10%;
-    --muted-foreground: 220 13% 65%;
-    --accent: 217 32% 12%;
-    --accent-foreground: 220 13% 95%;
+    /* Dark neutral tones - Enhanced readability */
+    --muted: 222 47% 8%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 222 47% 10%;
+    --accent-foreground: 210 20% 98%;
     
-    /* Dark status colors */
+    /* Status colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     --success: 142 71% 45%;
@@ -128,25 +128,25 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
     
-    /* Dark borders and inputs - Better definition */
-    --border: 222 47% 12%;
-    --input: 222 47% 12%;
-    --ring: 217 91% 68%;
+    /* Dark borders and inputs - Refined definition */
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 222 84% 65%;
     
-    /* Dark professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 68%), hsl(217 91% 58%));
-    --gradient-surface: linear-gradient(135deg, hsl(222 47% 7%), hsl(222 47% 6%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 68% / 0.08), hsl(217 91% 78% / 0.03));
-    --gradient-card: linear-gradient(145deg, hsl(222 47% 6%), hsl(222 47% 7%));
-    --gradient-glass: linear-gradient(145deg, hsl(222 47% 6% / 0.9), hsl(222 47% 7% / 0.8));
+    /* Modern dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(222 84% 65%), hsl(222 84% 55%));
+    --gradient-surface: linear-gradient(135deg, hsl(222 47% 5%), hsl(222 47% 4%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 65% / 0.06), hsl(222 84% 75% / 0.03));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 4%), hsl(222 47% 5%));
+    --gradient-glass: linear-gradient(145deg, hsl(222 47% 4% / 0.95), hsl(222 47% 5% / 0.9));
     
-    /* Dark professional shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(222 47% 0% / 0.4);
-    --shadow-md: 0 4px 6px -1px hsl(222 47% 0% / 0.5), 0 2px 4px -1px hsl(222 47% 0% / 0.4);
-    --shadow-lg: 0 10px 15px -3px hsl(222 47% 0% / 0.5), 0 4px 6px -2px hsl(222 47% 0% / 0.4);
-    --shadow-xl: 0 20px 25px -5px hsl(222 47% 0% / 0.6), 0 10px 10px -5px hsl(222 47% 0% / 0.3);
-    --shadow-glow: 0 0 40px hsl(217 91% 68% / 0.15);
-    --shadow-inner: inset 0 2px 4px 0 hsl(217 91% 68% / 0.1);
+    /* Elevated dark shadows */
+    --shadow-sm: 0 1px 3px 0 hsl(222 47% 0% / 0.5);
+    --shadow-md: 0 4px 12px -2px hsl(222 47% 0% / 0.4);
+    --shadow-lg: 0 8px 24px -4px hsl(222 47% 0% / 0.5);
+    --shadow-xl: 0 16px 40px -8px hsl(222 47% 0% / 0.6);
+    --shadow-glow: 0 0 32px hsl(222 84% 65% / 0.25);
+    --shadow-inner: inset 0 2px 4px 0 hsl(222 84% 65% / 0.08);
     
     --sidebar-background: 222 15% 10%;
     --sidebar-foreground: 220 13% 95%;
@@ -214,11 +214,11 @@
   }
   
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-24 md:py-32;
   }
   
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
   }
   
   .text-gradient {
@@ -226,31 +226,31 @@
   }
   
   .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-elegant;
+    @apply transition-all duration-500 hover:-translate-y-3 hover:shadow-xl;
   }
   
   .hover-scale {
-    @apply transition-all duration-300 hover:scale-[1.02];
+    @apply transition-all duration-300 hover:scale-[1.01];
   }
   
   .professional-card {
-    @apply bg-gradient-card border border-border/50 rounded-2xl p-8 transition-all duration-300 hover:shadow-elegant hover:border-primary/30 hover:-translate-y-1;
+    @apply gradient-card border border-border/50 rounded-3xl p-10 transition-all duration-500 hover:shadow-xl hover:border-primary/40 hover:-translate-y-2 hover:scale-[1.01];
   }
   
   .glass-card {
-    @apply gradient-glass border border-border/30 rounded-2xl p-8 shadow-professional;
+    @apply gradient-glass border border-border/30 rounded-3xl p-10 shadow-lg backdrop-blur-xl;
   }
   
   .skill-tag {
-    @apply inline-flex items-center px-4 py-2 text-sm font-medium bg-primary-subtle text-primary rounded-full transition-all duration-300 hover:bg-primary/10 hover:scale-105 hover:shadow-md;
+    @apply inline-flex items-center px-5 py-3 text-sm font-semibold bg-primary-subtle text-primary rounded-full transition-all duration-300 hover:bg-primary/10 hover:scale-105 hover:shadow-md border border-primary/20;
   }
   
   .project-card {
-    @apply professional-card group overflow-hidden;
+    @apply professional-card group overflow-hidden bg-gradient-to-br from-card to-surface;
   }
   
   .hero-card {
-    @apply glass-card backdrop-blur-md;
+    @apply glass-card backdrop-blur-2xl border-primary/20;
   }
   
   .floating-element {
@@ -262,19 +262,19 @@
   }
   
   .section-title {
-    @apply text-4xl md:text-5xl font-bold text-balance;
+    @apply text-5xl md:text-6xl font-black text-balance leading-tight tracking-tight;
   }
   
   .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-balance;
+    @apply text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto text-balance leading-relaxed;
   }
   
   .button-primary {
-    @apply inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-professional transition-all duration-300 hover:bg-primary-dark hover:shadow-glow hover:scale-105;
+    @apply inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-bold rounded-2xl shadow-lg transition-all duration-300 hover:bg-primary-dark hover:shadow-glow hover:scale-105 hover:-translate-y-1 border border-primary/20;
   }
   
   .button-secondary {
-    @apply inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground font-semibold rounded-xl border border-border shadow-sm transition-all duration-300 hover:bg-accent hover:shadow-md hover:scale-105;
+    @apply inline-flex items-center gap-3 px-10 py-5 bg-surface text-foreground font-bold rounded-2xl border-2 border-border shadow-md transition-all duration-300 hover:bg-accent hover:shadow-lg hover:scale-105 hover:-translate-y-1 hover:border-primary/30;
   }
 }
 
