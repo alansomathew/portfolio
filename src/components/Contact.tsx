@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Mail, Phone, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin } from 'lucide-react'; // Updated icons
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useForm, ValidationError } from '@formspree/react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -12,24 +13,9 @@ export function Contact() {
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
-  };
+  const [state, handleSubmit] = useForm("xknabpoa"); // Replace with your actual Formspree ID
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -37,6 +23,21 @@ export function Contact() {
       [e.target.name]: e.target.value
     }));
   };
+
+  if (state.succeeded) {
+
+
+    // Reset form
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    setTimeout(() => {
+      window.location.reload();
+    },); // wait 1.5 seconds for the toast to show
+    toast({
+      title: "Message sent successfully!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
+    });
+
+  }
 
   return (
     <section id="contact" className="section-padding">
@@ -46,7 +47,7 @@ export function Contact() {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's collaborate on exciting projects or discuss opportunities. 
+            Let's collaborate on exciting projects or discuss opportunities.
             I'm always open to new challenges and innovative solutions.
           </p>
         </div>
@@ -57,7 +58,8 @@ export function Contact() {
             <div>
               <h3 className="text-xl font-semibold mb-6">Let's Connect</h3>
               <div className="space-y-4">
-                <a 
+                {/* Email */}
+                <a
                   href="mailto:alansomathew10@gmail.com"
                   className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/20 transition-smooth hover-lift"
                 >
@@ -70,7 +72,8 @@ export function Contact() {
                   </div>
                 </a>
 
-                <a 
+                {/* Phone */}
+                <a
                   href="tel:+919447908235"
                   className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/20 transition-smooth hover-lift"
                 >
@@ -83,7 +86,8 @@ export function Contact() {
                   </div>
                 </a>
 
-                <a 
+                {/* GitHub */}
+                <a
                   href="https://github.com/alansomathew"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -98,7 +102,8 @@ export function Contact() {
                   </div>
                 </a>
 
-                <a 
+                {/* LinkedIn */}
+                <a
                   href="https://linkedin.com/in/alansomathew"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -112,7 +117,6 @@ export function Contact() {
                     <p className="text-muted-foreground">linkedin.com/in/alansomathew</p>
                   </div>
                 </a>
-                {/*  */}
               </div>
             </div>
           </div>
@@ -149,6 +153,7 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder="your.email@example.com"
                   />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
               </div>
 
@@ -180,15 +185,16 @@ export function Contact() {
                   placeholder="Tell me about your project or opportunity..."
                   rows={6}
                 />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
 
-              <Button 
-                type="submit" 
-                disabled={isSubmitting}
+              <Button
+                type="submit"
+                disabled={state.submitting}
                 className="w-full gradient-primary text-white hover:shadow-glow transition-bounce"
                 size="lg"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {state.submitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </div>
