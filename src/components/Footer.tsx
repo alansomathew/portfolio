@@ -69,14 +69,14 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
+              <a className="flex items-center gap-2" href="mailto:alansomathew10@gmail.com">
+                <Mail className="w-4 h-4" /> 
                 alansomathew10@gmail.com
-              </p>
-              <p className="flex items-center gap-2">
+              </a>
+              <a className="flex items-center gap-2" href="tel:+919447908235">
                 <Phone className="w-4 h-4" />
                 +91 9447908235
-              </p>
+              </a>
               <p className="flex items-center gap-2">
                 📍 Kerala, India
               </p>
